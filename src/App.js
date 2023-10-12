@@ -9,7 +9,7 @@ const App = () => {
         height: "100vh",
       }}
     >
-      <Scene />;
+      <Scene />
     </div>
   );
 };

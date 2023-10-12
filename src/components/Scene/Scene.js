@@ -6,7 +6,7 @@ import classes from "./Scene.module.css";
 const Scene = () => {
   return (
     <Canvas className={classes.canvas}>
-      {/* <Stars /> */}
+      <Stars />
     </Canvas>
   );
 };
