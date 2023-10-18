@@ -8,10 +8,9 @@ import { useFrame } from "@react-three/fiber";
 
 const Exoplanet = () => {
   const planetRef = useRef();
+  const controls = useRef();
 
   const [planetClicked, setPlanetClicked] = useState(false);
-
-  const controls = useRef();
 
   const texture = new TextureLoader().load(ExoplanetTexture);
 
@@ -28,18 +27,20 @@ const Exoplanet = () => {
   });
 
   return (
-    <mesh ref={planetRef} onClick={planetClickHandler}>
-      {planetClicked === false && (
-        <OrbitControls
-          ref={controls}
-          minDistance={3}
-          maxDistance={6}
-          dampingFactor={0.1}
-        />
-      )}
-      <sphereGeometry args={[1, 128, 128]} />
-      <meshBasicMaterial map={texture} />
-    </mesh>
+    <>
+      <mesh ref={planetRef} onClick={planetClickHandler}>
+        {planetClicked === false && (
+          <OrbitControls
+            ref={controls}
+            minDistance={3}
+            maxDistance={6}
+            dampingFactor={0.1}
+          />
+        )}
+        <sphereGeometry args={[1, 128, 128]} />
+        <meshBasicMaterial map={texture} />
+      </mesh>
+    </>
   );
 };
 

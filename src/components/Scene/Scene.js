@@ -10,6 +10,7 @@ const Scene = () => {
     <Canvas className={classes.canvas}>
       <Exoplanet />
       <Stars />
+      <pointLight position={[5, 5, 5]} intensity={1} color="red" />
     </Canvas>
   );
 };
