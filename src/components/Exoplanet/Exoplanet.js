@@ -38,7 +38,7 @@ const Exoplanet = () => {
           />
         )}
         <sphereGeometry args={[1, 128, 128]} />
-        <meshBasicMaterial map={texture} />
+        <meshStandardMaterial map={texture} />
       </mesh>
     </>
   );

@@ -8,9 +8,15 @@ import classes from "./Scene.module.css";
 const Scene = () => {
   return (
     <Canvas className={classes.canvas}>
+      <ambientLight intensity={0.5} color="white" />
+      <pointLight
+        position={[0, 20, 10]}
+        intensity={1}
+        color="red"
+        castShadow={true}
+      />{" "}
       <Exoplanet />
       <Stars />
-      <pointLight position={[5, 5, 5]} intensity={1} color="red" />
     </Canvas>
   );
 };
