@@ -13,8 +13,8 @@ const Scene = () => {
       <Stars />
       <pointLight
         position={[5, 0, 0]}
-        intensity={2}
-        color="red"
+        intensity={100}
+        color="white"
         castShadow={true}
       />
     </Canvas>
