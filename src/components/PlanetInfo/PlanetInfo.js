@@ -1,11 +1,17 @@
+import { Html } from "@react-three/drei";
+
 const PlanetInfo = () => {
   return (
-    <div className="planet-info" onClick={onClose}>
-      <div className="planet-info-content">
-        <h2>{planetInfo.name}</h2>
-        <p>{planetInfo.description}</p>
+    <Html center>
+      <div className="planet-info">
+        <div className="planet-info-content">
+          <div className="planet-info-title">
+            <h2>Name</h2>
+          </div>
+          <p>Description</p>
+        </div>
       </div>
-    </div>
+    </Html>
   );
 };
 

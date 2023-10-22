@@ -3,6 +3,8 @@ import { OrbitControls } from "@react-three/drei";
 
 import { TextureLoader } from "three";
 
+import PlanetInfo from "../PlanetInfo/PlanetInfo";
+
 import ExoplanetTexture from "../../assets/exoplanet.png";
 import { useFrame } from "@react-three/fiber";
 
@@ -17,7 +19,7 @@ const Exoplanet = () => {
   const planetClickHandler = () => {
     setPlanetClicked(true);
 
-    alert("planet clicked!");
+    // alert("planet clicked!");
   };
 
   useFrame(() => {
@@ -37,6 +39,7 @@ const Exoplanet = () => {
             dampingFactor={0.1}
           />
         )}
+        {planetClicked && <PlanetInfo />}
         <sphereGeometry args={[1, 128, 128]} />
         <meshStandardMaterial map={texture} roughness={0.5} color="#ffffff" />
       </mesh>
