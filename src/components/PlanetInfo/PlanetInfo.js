@@ -8,11 +8,9 @@ const PlanetInfo = () => {
       <div className={classes.planetInfo}>
         <div className="planet-info-content">
           <div className="planet-info-title">
-            <h2 className={classes.planetName}>Name:</h2>
             <p className={classes.planetName}>Terra Nova</p>
           </div>
           <div className="planet-info-description">
-            <h2 className={classes.planetDescription}>Description:</h2>
             <p className={classes.planetDescription}>
               Terra Nova is a breathtaking exoplanet located in the distant
               reaches of the Milky Way galaxy. With its striking similarities to
