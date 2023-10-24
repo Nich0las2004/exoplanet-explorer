@@ -1,4 +1,6 @@
-# Terra Nova - The Twin Earth
+# Name
+
+Terra Nova - The Twin Earth
 
 ## Description
 
@@ -14,8 +16,8 @@ To get started, follow these simple steps:
 
 2. Install dependencies:
 
-    npm install
+   npm install
 
 3. Start the project:
 
-    npm start
+   npm start
