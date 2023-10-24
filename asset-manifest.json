@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/exoplanet-explorer/static/css/main.eff746e6.css",
+    "main.js": "/exoplanet-explorer/static/js/main.eff44374.js",
+    "static/media/exoplanet.png": "/exoplanet-explorer/static/media/exoplanet.77202ac1acab14fd0472.png",
+    "index.html": "/exoplanet-explorer/index.html",
+    "main.eff746e6.css.map": "/exoplanet-explorer/static/css/main.eff746e6.css.map",
+    "main.eff44374.js.map": "/exoplanet-explorer/static/js/main.eff44374.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eff746e6.css",
+    "static/js/main.eff44374.js"
+  ]
+}
